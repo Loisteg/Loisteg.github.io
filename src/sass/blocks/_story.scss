@@ -1,0 +1,72 @@
+.story {
+    padding: 120px 0;
+    position: relative;
+    &__img {
+        img {
+            width: 100%;
+        }
+    }
+    &__information {
+        display: grid;
+        grid-template-rows: minmax(200px, auto) minmax(252px, auto);
+        row-gap: 40px;
+        .divider {
+            margin: 0;
+
+        }
+    }
+    &__header {
+        position: relative;
+        padding-left: 12px;
+        z-index: 1;
+        @include before_circle;
+    }
+    &__subheader {
+        margin-top: 6px;
+    }
+    &__text {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+    }
+    &__skills {
+        display: grid;
+        grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 260px);
+        grid-auto-rows: 1fr;
+        gap: 20px 50px;
+        &-item {
+            display: grid;
+            grid-template-columns: 40px 200px;
+            column-gap: 20px;
+            &__circle {
+                position: relative;
+                padding-top: 15px;
+                padding-left: 15px;
+                @include before_circle;
+                &__mobile {
+                    padding-top: 13px;
+                    padding-left: 18px;
+                }
+                &::before {
+                    top: -3px;
+                }
+            }
+            &__descr {
+                margin-top: 6px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: #000000;
+            }
+        }
+    }
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template: 600px / 408px 572px;
+    column-gap: 60px;
+}
