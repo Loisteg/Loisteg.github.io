@@ -1,0 +1,122 @@
+.contacs {
+    padding-bottom: 90px;
+    &__wrapper {
+        padding: 0 35px 0 52px;
+        display: grid;
+        grid-template-columns: 400px 585px;
+        justify-content: space-between;
+    }
+    &__photo {
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        } 
+    }
+    &__descr {
+        .divider {
+            margin: 0;
+        }
+    }
+    &__img {
+        img {
+            width: 100%;
+        }
+    }
+    &__header {
+        position: relative;
+        padding-left: 12px;
+        z-index: 1;
+        @include before_circle;
+    }
+    &__subheader {
+        margin-top: 6px;
+    }
+    &__text, &__social {
+        margin-top: 20px;
+    }
+    &__link {
+        margin-right: 25px;
+        img {
+            max-width: 30px;
+            max-height: 30px;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__form {
+        margin-top: 30px;
+        display: grid;
+        grid-template: 45px 190px 56px / repeat(2, 280px);
+        justify-content: space-between;
+        row-gap: 30px;
+        font-weight: 500;
+        font-size: 12px;
+        color: #000000;
+        label {
+            position: absolute;
+            top: -9px;
+            left: 12px;
+            display: block;
+            margin-bottom: 0;
+            padding: 0 8px;
+            height: 18px;
+            background-color: #fff;
+            font-weight: 500;
+            font-size: 12px;
+            color: #000000;
+        }
+        label.error {
+            text-align: center;
+            top: 47px;
+            left: 40px;
+        }
+    }
+    &__triggers {
+        grid-column: 1/3;
+        padding-top: 11px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 35px;
+    }
+    &__policy {
+        font-size: 12px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        input {
+            margin-right: 10px;
+        }
+        a {
+            color: #2306D6;
+            text-decoration: none;
+        }
+    }
+    &__input {
+        position: relative;
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 0 20px;
+        }
+    }
+    &__textarea {
+        position: relative;
+        grid-column: 1 / 3;
+        margin-top: 10px;
+        textarea {
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            resize: none;
+        }
+    }
+    &_btn {
+        border: none;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+    }
+}

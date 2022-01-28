@@ -1,0 +1,41 @@
+.policy {
+    &__title {
+        position: relative;
+        text-align: center;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 60px;
+        color: #000000;
+        @include before_circle;
+        &::before {
+            top: 10px;
+            left: 11px;
+        }
+    }
+    &__subtitle {
+        position: relative;
+        margin-top: 15px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        color: #000000;
+        @include before_circle;
+        &::before {
+            width: 15px;
+            height: 15px;
+            top: 6px;
+            left: -26px;
+        }
+    }
+    &__text {
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+    }
+    .divider {
+        margin: 10px auto 50px auto;
+        width: 865px;
+    }
+}

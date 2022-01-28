@@ -72,11 +72,12 @@
         }
         &:hover {
             &::before {
-                background-color: #fff;
+                background-color: #000;
                 border: 0px;
             }
         }
         a {
+            font-weight: bold;
             color: #FFFFFF;
             text-decoration: none;
             &:hover {
