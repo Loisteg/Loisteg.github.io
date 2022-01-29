@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
+    <title>Loisteg's portfolio</title>
     <meta name="title" content="Мое портфолио">
     <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
 
@@ -79,7 +79,7 @@
                     <li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
                     <li class="menu__link"><a href="#work">МОИ НАВЫКИ</a></li>
                     <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
-                    <li class="menu__link"><a href="#pricelist">ПРАЙС-ЛИСТ</a></li>
+                    <li class="menu__link"><a href="#price">ПРАЙС-ЛИСТ</a></li>
                     <li class="menu__link"><a href="#contacs">КОНТАКТЫ</a></li>
                 </ul>
             </nav>   
@@ -133,10 +133,14 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/main_photo.jpg" alt="photo">
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/main_photo-min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/main_photo.jpg">
+                        <img src="img/main_photo.jpg" alt="photo">
+                    </picture>
                 </div>
                 <div class="about__descr">
-                    <h2 class="title title_fz16 about__title">Обо меня</h2>
+                    <h2 class="title title_fz16 about__title">Обо мне</h2>
                     <div class="title title_fz36 about__subtitle">Меня зовут Александра</div>
                     <div class="divider"></div>
                     <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
@@ -357,7 +361,7 @@
         </div>
     </section>
 
-    <!-- <section class="portfolio" id="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Портфолио</h2>
             <div class="title title_fz36 title__section-subtitle">Мои работы</div>
@@ -384,53 +388,62 @@
                 </a>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="pricelist" id="pricelist">
+    <section class="price" id="price">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Прайс-лист</h2>
             <div class="divider"></div>
-
-            <div class="pricelist__wrapper">
-                <div class="pricelist__column">
-                    <div class="pricelist-item">
-                        <div class="title title_fz14 pricelist-item__header">Landing-page</div>
-                        <div class="title title_fz14 pricelist-item__price">от 8000 руб.</div>
-                        <div class="pricelist-item__subheader">Одностраничный сайт для презентации услуг/товаров/...</div>
-                    </div>
-                    <div class="pricelist-item">
-                        <div class="title title_fz14 pricelist-item__header">Корпоративный сайт</div>
-                        <div class="title title_fz14 pricelist-item__price">от 20000 руб.</div>
-                        <div class="pricelist-item__subheader">Сайт для вашего бизнеса или компании</div>
-                    </div>
-                    <div class="pricelist-item">
-                        <div class="title title_fz14 pricelist-item__header">Интернет-магазин</div>
-                        <div class="title title_fz14 pricelist-item__price">от 30000 руб.</div>
-                        <div class="pricelist-item__subheader">Инструмент для ваших продаж в сети</div>
+    
+            <div class="price__wrapper">
+                <div class="price__item">
+                    <div class="price__type">Landing-page</div>
+                    <div class="price__count">от 8000 руб.</div>
+                    <div class="price__descr">
+                        Одностраничный сайт для презентации услуг/товаров/...
                     </div>
                 </div>
-                <div class="pricelist__column">
-                    <div class="pricelist-item">
-                        <div class="title title_fz14 pricelist-item__header">Web-приложение</div>
-                        <div class="title title_fz14 pricelist-item__price">от 28000 руб.</div>
-                        <div class="pricelist-item__subheader">Приложение внутри браузера для лучшего комфорта</div>
-                    </div>
-                    <div class="pricelist-item">
-                        <div class="title title_fz14 pricelist-item__header">Android/IOS Приложение</div>
-                        <div class="title title_fz14 pricelist-item__price">от 25000 руб.</div>
-                        <div class="pricelist-item__subheader">Приложение для смартфона любой ОС</div>
-                    </div>
-                    <div class="pricelist-item">
-                        <div class="title title_fz14 pricelist-item__header">Дизайн</div>
-                        <div class="title title_fz14 pricelist-item__price">Индивидуально</div>
-                        <div class="pricelist-item__subheader">Создам дизайн для вашего сайта/приложения...</div>
+                <div class="price__item">
+                    <div class="price__type">Web-приложение</div>
+                    <div class="price__count">от 28000 руб.</div>
+                    <div class="price__descr">
+                        Приложение внутри браузера для лучшего комфорта
                     </div>
                 </div>
-            </div> 
+                <div class="price__item">
+                    <div class="price__type">Корпоративный сайт</div>
+                    <div class="price__count">от 20000 руб.</div>
+                    <div class="price__descr">
+                        Сайт для вашего бизнеса или компании
+                    </div>
+                </div>
+                <div class="price__item">
+                    <div class="price__type">Android/IOS Приложение</div>
+                    <div class="price__count">от 25000 руб.</div>
+                    <div class="price__descr">
+                        Приложение для смартфона любой ОС
+                    </div>
+                </div>
+                <div class="price__item">
+                    <div class="price__type">Интернет-магазин</div>
+                    <div class="price__count">от 30000 руб.</div>
+                    <div class="price__descr">
+                        Инструмент для ваших продаж в сети
+                    </div>
+                </div>
+                <div class="price__item">
+                    <div class="price__type">Дизайн</div>
+                    <div class="price__count">Индивидуально</div>
+                    <div class="price__descr">
+                        Создам дизайн для вашего сайта/приложения...
+                    </div>
+                </div>
+            </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="contacs" id="contacs">
+
+    <section class="contacs" id="contacs">
         <div class="container">
             <div class="contacs__wrapper">
                 <div class="contacs__photo">
@@ -438,7 +451,7 @@
                 </div>
                 <div class="contacs__descr" id="backform">
                     <div class="title title_fz16 contacs__header">Контакты</div>
-                    <div class="title contacs_subheader">Свяжитесь со мной</div>
+                    <div class="title title_fz36 contacs__subheader">Свяжитесь со мной</div>
                     <div class="divider"></div>
                         
                     <div class="title title_fz14 contacs__text">Любым удобным для вас способом:</div> 
@@ -482,7 +495,7 @@
                 </div>
             </div>
         </div>
-    </section>  -->
+    </section> 
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>

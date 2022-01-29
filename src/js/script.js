@@ -12,8 +12,7 @@ closeElem.addEventListener('click', () => {
 
 const counters = document.querySelectorAll('.work__bar-item__procent'),
         lines = document.querySelectorAll('.work__bar-item__firstline');
-   
-        
+
 counters.forEach( (item, i) => {
     lines[i].style.width = item.innerHTML;
 });
