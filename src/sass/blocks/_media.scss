@@ -25,6 +25,12 @@
             }
         }
     }
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2,390px);
+            column-gap: 110px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -47,6 +53,13 @@
                 grid-template-columns: 40px 320px;
                 column-gap: 20px;
             }
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 40px 15px 0 15px;
+            grid-template-columns: repeat(2,300px);
+            column-gap: 100px;
         }
     }
 }
@@ -83,7 +96,13 @@
                 column-gap: 20px;
             }
         }
-        
+    }
+    .resume {
+        &__wrapper {
+            padding: 40px 0 0 0;
+            grid-template-columns: 1fr;
+            gap: 40px 0;
+        }
     }
 }
 
