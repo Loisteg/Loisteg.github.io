@@ -17,19 +17,30 @@ counters.forEach( (item, i) => {
     lines[i].style.width = item.innerHTML;
 });
 
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 800) {
-        $('.pageup').fadeIn();
-    } else {
-        $('.pageup').fadeOut();
-    }
-});
+// Smooth scroll (Jquery)
 
-$("a[href^='#']").click(function(){
-    const _href = $(this).attr("href");
-    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
-    return false;
-});
+console.log(document.body.clientWidth);
+
+if (document.body.clientWidth > 767) {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 800) {
+            $('.pageup').fadeIn();
+        }
+        else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a[href^='#']").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
+}
+
+// Animate with WOW
+
+new WOW().init();
 
 // $('.contacs__form').validate({
 //     rules: {
@@ -64,20 +75,20 @@ $("a[href^='#']").click(function(){
 
 //PHP Form
 
-$('form').submit(function(e) {
-    e.preventDefault();
+// $('form').submit(function(e) {
+//     e.preventDefault();
 
-    if (!$(this).valid()) {
-        return;
-    }
+//     if (!$(this).valid()) {
+//         return;
+//     }
 
-    $.ajax({
-        type: 'POST',
-        url: 'mailer/smart.php',
-        data: $(this).serialize()
-    }).done(function() {
-        $(this).find('input').val('');
-        $('form').trigger('reset');
-    });
-    return false;
-});
+//     $.ajax({
+//         type: 'POST',
+//         url: 'mailer/smart.php',
+//         data: $(this).serialize()
+//     }).done(function() {
+//         $(this).find('input').val('');
+//         $('form').trigger('reset');
+//     });
+//     return false;
+// });

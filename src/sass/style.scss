@@ -3,6 +3,20 @@
 
 @import 'base/variables';
 @import 'base/mixins';
+@import 'base/animations';
+
+// ::-webkit-scrollbar {
+//     width: 10px;
+// }
+
+::-webkit-scrollbar-track {
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $main-color;
+    border-radius: 50px;
+}
 
 * {
     font-family: 'Poppins', sans-serif;
