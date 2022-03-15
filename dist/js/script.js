@@ -27,8 +27,6 @@ counters.forEach( (item, i) => {
 
 // Smooth scroll (Jquery)
 
-console.log(document.body.clientWidth);
-
 if (document.body.clientWidth > 767) {
     $(window).scroll(function() {
         if ($(this).scrollTop() > 800) {

@@ -112,10 +112,16 @@
         }
     }
     &_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border: none;
         font-weight: bold;
         font-size: 14px;
         line-height: 21px;
         color: #000000;
+        &:hover {
+            transition: all 0.5s;
+        }
     }
 }
