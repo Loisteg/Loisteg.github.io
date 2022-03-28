@@ -17,6 +17,11 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            img {
+                &:hover {
+                    animation: 3s shake;
+                }
+            }
         }
         &__header {
             margin-bottom: 15px;

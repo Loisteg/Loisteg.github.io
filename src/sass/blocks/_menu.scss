@@ -94,6 +94,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        a {
+            svg {
+                transition: all 0.6s;
+                &:hover {
+                    filter: contrast(0.6);
+                }
+            }
+        }
     }
     &__overlay {
         position: fixed;

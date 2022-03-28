@@ -57,7 +57,7 @@
     }
     .portfolio {
         &__wrapper {
-            grid-template-columns: repeat(auto-fit, 280px);
+            grid-template-columns: repeat(auto-fit, 280px 280px);
             justify-content: center;
             .horizontal, .vertical {
                 grid-row: unset;
@@ -94,6 +94,11 @@
     .pageup {  
         bottom: 10px;
         right: 10px;
+        img {
+            &:hover {
+                filter: contrast(1)
+            }
+        }
     }
     .container {
         max-width: 720px;
@@ -130,6 +135,16 @@
         &__wrapper__bars {
             grid-template: repeat(2,70px)/repeat(2,335px);
         }
+        &-item {
+            &__img {
+                animation: float 6s ease-in-out infinite;
+                img {
+                    &:hover {
+                        animation-name: none;
+                    }
+                }
+            }
+        }
     }
     .portfolio {
         .portfolio__wrapper {
@@ -147,6 +162,11 @@
         &__wrapper {
             padding: 0 15px;
             grid-template-columns: repeat(auto-fit, 690px);
+        }
+        &__link {
+            &:hover {
+                filter: contrast(1);
+            }
         }
         &__photo {
             display: none;
@@ -213,6 +233,7 @@
         padding-bottom: 40px;
         &__wrapper {
             margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, 280px);
         }
     }
     .price {

@@ -9,5 +9,9 @@
     img {
         width: 100%;
         cursor: pointer;
+        transition: all 0.7s;
+        &:hover {
+            filter: contrast(1.7)
+        }
     }
 }

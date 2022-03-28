@@ -22,4 +22,12 @@
             width: 150px;
         }
     }
+    &__link {
+        svg {
+            transition: all 0.6s;
+            &:hover {
+                filter: contrast(0.5)
+            }
+        }
+    }
 }

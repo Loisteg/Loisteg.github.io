@@ -36,11 +36,13 @@
     }
     &__link {
         margin-right: 25px;
+        transition: all 0.6s;
         img {
             max-width: 30px;
             max-height: 30px;
         }
         &:hover {
+            filter: contrast(0.5);
             text-decoration: none;
         }
     }
