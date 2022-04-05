@@ -29,7 +29,7 @@ counters.forEach( (item, i) => {
 
 if (document.body.clientWidth > 767) {
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 800) {
+        if ($(this).scrollTop() > 800 && $(this).scrollTop() < 3700) {
             $('.pageup').fadeIn();
         }
         else {
@@ -47,54 +47,3 @@ if (document.body.clientWidth > 767) {
 // Animate with WOW
 
 new WOW().init();
-
-// $('.contacs__form').validate({
-//     rules: {
-//         name: {
-//             required: true,
-//             minlength: 2
-//         },
-//         email: {
-//             required: true,
-//             email: true
-//         },
-//         text: {
-//             required: true,
-//             minlength: 1
-//         }
-//     },
-//     messages: {
-//         name: {
-//             required: 'Пожалуйста, введите своё имя',
-//             minlength: jQuery.validator.format("Введите хотя бы {0} символа")
-//         },
-//         email: {
-//           required: 'Пожалуйста, введите свою почты',
-//           email: 'Неправильно введён адрес почты'
-//         },
-//         text: {
-//             required: ""
-//         }
-//       }
-// });
-
-
-//PHP Form
-
-// $('form').submit(function(e) {
-//     e.preventDefault();
-
-//     if (!$(this).valid()) {
-//         return;
-//     }
-
-//     $.ajax({
-//         type: 'POST',
-//         url: 'mailer/smart.php',
-//         data: $(this).serialize()
-//     }).done(function() {
-//         $(this).find('input').val('');
-//         $('form').trigger('reset');
-//     });
-//     return false;
-// });
