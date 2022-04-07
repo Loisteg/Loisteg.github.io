@@ -111,14 +111,14 @@
     </a>
 
 
-    <section class="promo" id="up">
+    <section class="promo animate__animated animate__fadeIn wow" data-wow-delay="0.3s" id="up">
         <div class="hamburger">
             <span></span>
             <span class="long"></span>
             <span></span>
         </div>
         <div class="container">
-            <div class="title title_fz16 promo__subtitle animate__animated animate__fadeInUp wow" data-wow-delay="0.5s">Меня зовут Алексей Худенко и я</div>
+            <div class="title title_fz16 promo__subtitle animate__animated animate__fadeInUp wow" data-wow-delay="0.7s">Меня зовут Алексей Худенко и я</div>
             <h1 class="title title_fz48 promo__title animate__animated animate__fadeInUp wow" data-wow-delay="1s">Junior Front-End Developer</h1>
             <div class="promo__btns animate__animated animate__fadeIn wow" data-wow-delay="1.8s">
                 <a href="#portfolio" class="promo__link btn">Портфолио</a>
@@ -134,8 +134,8 @@
                 <div class="about__photo animate__animated animate__fadeIn wow" data-wow-delay="0.5s">
                     <picture>
                         <source media="(max-width: 576px)" srcset="img/main_photo-min.jpg">
-                        <source media="(min-width: 577px)" srcset="img/main_photo.jpg">
-                        <img src="img/main_photo.jpg" alt="photo">
+                        <source media="(min-width: 577px)" srcset="img/mphoto.png">
+                        <img src="img/mphoto.png" alt="photo">
                     </picture>
                 </div>
                 <div class="about__descr animate__animated animate__fadeIn wow" data-wow-delay="0.6s">
@@ -473,7 +473,7 @@
         <div class="container">
             <div class="contacs__wrapper">
                 <div class="contacs__photo animate__animated animate__fadeIn wow" data-wow-delay="0.3s">
-                    <img src="img/main_photo.jpg" alt="My picture">
+                    <img src="img/main_photo4.png" alt="My picture">
                 </div>
                 <div class="contacs__descr" id="backform">
                     <div class="title title_fz16 contacs__header animate__animated animate__fadeIn wow" data-wow-delay="0.3s">Контакты</div>
@@ -500,23 +500,23 @@
 
                     <form action="" class="contacs__form">
                         <div class="contacs__input animate__animated animate__fadeInUp wow" data-wow-delay="1.2s">
-                            <input name="name" id="name" type="text">
+                            <input name="name" id="name" type="text" required>
                             <label for="name">Ваше имя</label>    
                         </div>
                         <div class="contacs__input animate__animated animate__fadeInUp wow" data-wow-delay="1.3s">
-                            <input name="email" id="email" type="email">
+                            <input name="email" id="email" type="email" required>
                             <label for="email">Ваша почта</label>
                          </div>
 
                         <div class="contacs__textarea animate__animated animate__fadeInUp wow" data-wow-delay="1.4s">
-                            <textarea name="text" id="text"></textarea>
+                            <textarea name="text" id="text" required></textarea>
                             <label for="text">Ваше сообщение</label>
                         </div>
 
                         <div class="contacs__triggers">
                             <button class="contacs_btn btn animate__animated animate__fadeInUp wow" data-wow-delay="1.5s">Отправить сообщение</button>
                             <div class="contacs__policy animate__animated animate__fadeInUp wow" data-wow-delay="1.5s">
-                                <input name="checkbox" type="checkbox">
+                                <input name="checkbox" type="checkbox" required>
                                 <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
                             </div>
                         </div>
