@@ -1,0 +1,19 @@
+.change-lang {
+    position: absolute;
+    top: 17px;
+    right: 100px;
+    z-index: 10;
+    width: 200px;
+    background-color: #11ffee00;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.6s;
+    &:hover {
+        background-color: rgba(116, 116, 116, 0.685);
+    }
+    option {
+        background-color: rgb(126, 126, 126);
+    }
+}

@@ -308,9 +308,12 @@
         &_fz36 {
             font-size: 24px;
         }
+        &_fz16 {
+            font-size: 15px;
+        }
     }
     .promo {
-        background: url('../img/main_bg.jpg') no-repeat 57%/cover;
+        background: url('../img/main_bg_small.jpg') no-repeat 50%/cover;
         &__btns {
             margin-top: 32px
         }
