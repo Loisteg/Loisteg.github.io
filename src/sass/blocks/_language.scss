@@ -1,5 +1,6 @@
 .change-lang {
     position: absolute;
+    text-align: center;
     top: 17px;
     right: 100px;
     z-index: 10;
@@ -8,12 +9,12 @@
     border: 1px black solid;
     border-radius: 5px;
     font-weight: bold;
-    text-align: center;
     transition: all 0.6s;
     &:hover {
         background-color: rgba(116, 116, 116, 0.685);
     }
     option {
         background-color: rgb(126, 126, 126);
+        text-align: center;
     }
 }
