@@ -110,13 +110,13 @@
     }
     .about {
         &__wrapper {
-            grid-template-columns: 320px 380px;
+            grid-template-columns: 320px 360px;
         }
         &__skills {
-            grid-template-columns: 380px;
+            grid-template-columns: 360px;
             grid-auto-rows: minmax(115px, auto);
             &-item {
-                grid-template-columns: 40px 320px;
+                grid-template-columns: 40px 300px;
                 column-gap: 20px;
             }
         }
@@ -201,6 +201,9 @@
         }
         &__photo {
             grid-row: unset;
+            img {
+                object-fit: contain;
+            }
         }
         &__skills {
             grid-template-columns: 260px 260px;
@@ -314,11 +317,15 @@
     }
     .promo {
         background: url('../img/main_bg_small.jpg') no-repeat 50%/cover;
+        &__title {
+            width: 250px;
+        }
         &__btns {
             margin-top: 32px
         }
     }
     .about {
+        padding-top: 0px;
         &__wrapper {
             grid-template: 340px auto auto / 1fr;
         }
