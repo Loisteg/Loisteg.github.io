@@ -111,7 +111,7 @@ const langArr = {
     },
     "resume__item-body-f": {
         "ru": "При учёбе в этом высшем учебном заведении были изучены принципы работы алгоритмов. Приминением для знаний алгоритмов послужил язык программирования С#. Во время учёбы были пройдены типы значений, обьявления функций, работа с терминалом, написание простого теста на скорость. Окончанием обучения предмета стало сдача собственного проекта.",
-        "en": "When studying at this higher educational institution, the principles of the operation of algorithms were studied. The application for the knowledge of algorithms was the C# programming language. During the study, the types of values, function declarations, working with the terminal, writing a simple test for speed were passed. The end of the course was the delivery of own project.",
+        "en": "When i was studying at this higher educational institution, the principles of the operation of algorithms were studied. The application for the knowledge of algorithms was the C# programming language. During the study, the types of values, function declarations, working with the terminal, writing a simple test for speed were passed. The end of the course was the delivery of own project.",
         "ua": "Під час навчання у цьому вищому навчальному закладі було вивчено принципи роботи алгоритмів. Застосуванням знань алгоритмів послужила мова програмування С#. Під час навчання пройшли типи значень, оголошення функцій, робота з терміналом, написання простого тесту на швидкість. Закінченням навчання предмета стало здавання власного проекту."
     },
     "resume__item-header-s": {
